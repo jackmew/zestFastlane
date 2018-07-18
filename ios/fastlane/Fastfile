@@ -22,7 +22,11 @@ platform :ios do
   lane :beta do
     increment_build_number
     match(type: "appstore") # more information: https://codesigning.guide -> llow you to sign your application using your distribution provisioning profile and distribution certificate
-    gym(scheme: "zestFastlane") # Build your app - more options available
+    cocoapods
+    gym(
+      scheme: "zestFastlane",
+      workspace: './zestFastlane.xcworkspace'
+    ) # Build your app - more options available
     pilot(
       skip_waiting_for_build_processing: true
     )

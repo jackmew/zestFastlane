@@ -3838,6 +3838,16 @@ react-devtools-core@3.0.0:
     shell-quote "^1.6.1"
     ws "^2.0.3"
 
+react-native-auth0@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/react-native-auth0/-/react-native-auth0-0.0.1.tgz#6a712cc0f00740337396205bc3da453f52d25026"
+
+react-native-lock@^0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/react-native-lock/-/react-native-lock-0.6.1.tgz#04928027f1d07e0fa51f06edebcc54106ce3c9cb"
+  dependencies:
+    react-native-auth0 "^0.0.1"
+
 react-native@0.53.0:
   version "0.53.0"
   resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.53.0.tgz#d57b49b1683f3bbfffd098fd07f7be0ff9e9df74"
